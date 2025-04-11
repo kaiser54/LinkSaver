@@ -1,0 +1,25 @@
+
+To push your local code changes to the main branch on a remote repository (e.g., GitHub, GitLab), follow these steps:
+
+1.  **Commit your changes:**
+    Open your terminal or command prompt and navigate to your project's root directory.
+    Use the following commands to commit your changes:
+
+    ```bash
+    git add .
+    git commit -m "Add your commit message here"
+    ```
+
+    Replace `"Add your commit message here"` with a descriptive message about the changes you've made.
+
+2.  **Push to the remote repository:**
+    Use the following command to push your committed changes to the main branch of the remote repository:
+
+    ```bash
+    git push origin main
+    ```
+
+    *   `origin` is the default alias for your remote repository. If you have named it differently, replace `origin` with the appropriate name.
+    *   `main` is the name of the branch you are pushing to.  If your main branch is called something else (e.g. `master`), replace `main` with the correct branch name.
+
+You may be prompted to enter your credentials (username and password or a personal access token) for the remote repository.

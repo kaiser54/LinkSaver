@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LinkSaver Viewer",
+  "version": "1.0",
+  "description": "View links saved in LinkSaver.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LinkSaver Viewer"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

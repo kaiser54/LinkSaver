@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkSaver Viewer</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    .link-item {
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+    /* Apply CSS variables for styling */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+    }
+
+    .link-item {
+        background-color: hsl(var(--card));
+        border-color: hsl(var(--border));
+    }
+
+    a {
+        color: hsl(var(--primary));
+    }
+
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+      }
+      .link-item {
+          background-color: hsl(var(--card));
+          border-color: hsl(var(--border));
+      }
+
+      a {
+          color: hsl(var(--secondary));
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>LinkSaver Links</h1>
+  <div id="links-container"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

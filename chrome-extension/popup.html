@@ -46,8 +46,15 @@
   </style>
 </head>
 <body>
-  <h1>LinkSaver Links</h1>
-  <div id="links-container"></div>
+    <h1>LinkSaver Links</h1>
+    <form id="add-link-form">
+        <label for="url">URL:</label><br>
+        <input type="text" id="url" name="url" required><br>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        <input type="submit" value="Add Link">
+    </form>
+    <div id="links-container"></div>
   <script src="popup.js"></script>
 </body>
 </html>
